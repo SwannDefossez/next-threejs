@@ -1,0 +1,32 @@
+:root {
+  --bg: #0d0d0d;
+  --bgSoft: #eae8ec;
+  --text: #f2f2f2;
+  --textSoft: #bfafaf;
+  --btn: #47609c;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  overflow: hidden;
+}
+h2 {
+  font-weight: 300;
+}
+p {
+  color: var(--textSoft);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,87 @@
+.flexCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  margin-top: 5rem;
+}
+.first_section {
+  display: flex;
+  justify-content: center;
+  margin-left: 10rem;
+}
+.textContainer {
+  max-width: 50vw;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding-top: 5rem;
+}
+
+.title {
+  font-size: 96px;
+}
+
+.desc {
+  font-size: 20px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 1s;
+  border: 2px solid transparent; /* Bordure transparente */
+  border-image: linear-gradient(to right, #47609c, #61a5c2, #87ceeb) 1;
+}
+.button:hover {
+  transition: all 1s;
+  color: #ffbbbb;
+  border-image: linear-gradient(to right, #eb8787, #c26161, #9c4747) 1;
+}
+
+.phone {
+  position: relative;
+  margin-right: 10rem;
+  width: 40vw;
+  height: 70vh;
+  z-index: 299;
+  cursor: pointer;
+}
+
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(2rem);
+  }
+}
+
+.icon {
+  position: absolute;
+  bottom: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px; /* Ajustez la taille de votre icône */
+  height: 50px; /* Ajustez la taille de votre icône */
+  border-radius: 50%; /* Assurez-vous d'avoir une forme circulaire */
+  animation: moveUpDown 3s ease-in-out infinite; /* Animation de haut en bas */
+}
